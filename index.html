@@ -11,9 +11,17 @@
     <header>
       <h1>Abriana Duran</h1>
       <h3>Web Developer</h3>
+      <nav>
+        <ul id="menu">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
       </header>
     <!--Introduction Section-->
-    <section class="bg-callout">
+    <section id="introduction" class="bg-callout">
       <h2>Introduction</h2>
       <div class="group">
         <div class="item">
@@ -29,7 +37,7 @@
     </section>
 
     <!--About Me Section-->
-    <section>
+    <section id="about">
       <h2>About Me</h2>
       <div class="group">
       <div class="item">
@@ -48,10 +56,9 @@
     </section> 
 
     <!--Contact Me Section-->
-    <section class="bg-callout">
+    <section id="contact" class="bg-callout">
       <h2>Contact</h2>
       <div class="group">
-        <p>Please contact me: </p>
         <div class="item">
           <a href="mailto:abrianamduran@gmail.com">Email Me</a>
         </div>
@@ -61,6 +68,18 @@
         <div class="item">
           <a href="https://www.linkedin.com/in/abriana-duran-913643201/">LinkedIn</a>
         </div>
+        <hr>
+        <div class="item">
+          <form action="https://formspree.io/abrianamduran@gmail.com" method="post">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Your Name">
+            
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" placeholder="Your Email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message Here"></textarea>
+          </form>
       </div>
     </section>
 
@@ -70,7 +89,7 @@
       <h2>Projects</h2>
       <div class="group">
         <div class="item">
-          <h3 class="text-padding">Pizza Project</h3>
+          <h3 class="text-padding"><a href="URL">Pizza Project</a></h3>
           <p>A project all about pizza. A placeholder project that holds the place of a project.</p>
           <!--project title, description, link-->
           <a href="URL">Project Link</a>
